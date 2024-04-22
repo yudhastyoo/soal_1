@@ -1,0 +1,188 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fff;
+  margin: 10px;
+}
+
+.box {
+  color: #fff;
+  background-color: rgb(0, 0, 245);
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+}
+
+.main-container {
+  padding: 10px;
+  background-color: #000;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.header-bottom {
+  display: flex;
+  gap: 20px;
+}
+
+.middle {
+  display: flex;
+  gap: 20px;
+}
+
+.section-left {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.section-right {
+  width: 40%;
+  background-color: rgb(0, 0, 245);
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.box-4-wrapper {
+  background-color: none;
+  border: 10px solid rgb(0, 0, 245);
+  padding: 10px;
+}
+
+.box-4 {
+  background-color: red;
+  padding: 60px 20px;
+}
+
+.section-left-bottom {
+  display: flex;
+  gap: 20px;
+}
+
+.box-8,
+.box-9,
+.box-10 {
+  background-color: red;
+  border: 6px solid #000;
+}
+
+.extra {
+  margin-top: 20px;
+  position: relative;
+}
+
+.blue-box {
+  background-color: rgb(0, 0, 245);
+  border: 10px solid #000;
+  width: 60%;
+  height: 250px;
+  position: relative;
+}
+
+.rec-1 {
+  background-color: red;
+  width: 180px;
+  height: 80px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.rec-2 {
+  background-color: #fff;
+  width: 120px;
+  height: 180px;
+  position: absolute;
+  top: 30px;
+  left: 90px;
+}
+
+.rec-3 {
+  background-color: red;
+  width: 180px;
+  height: 80px;
+  position: absolute;
+  bottom: 0;
+  left: 130px;
+}
+
+.rec-4 {
+  background-color: red;
+  width: 180px;
+  height: 80px;
+  position: absolute;
+  top: 0;
+  right: -100px;
+}
+
+.rec-5 {
+  background-color: red;
+  width: 180px;
+  height: 80px;
+  position: absolute;
+  bottom: 0;
+  right: 150px;
+}
+
+.star {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.star img {
+  filter: drop-shadow(10px 5px 10px #000000);
+}
+
+span {
+  color: red;
+  font-weight: 800;
+  position: absolute;
+  bottom: 15px;
+  right: 12px;
+  rotate: 10deg;
+}
+
+@media only screen and (max-width: 768px) {
+  .extra {
+    display: none;
+  }
+
+  .main-container {
+    height: 100vh;
+  }
+
+  .header-bottom {
+    flex-direction: column;
+  }
+
+  .middle {
+    flex-direction: column;
+  }
+
+  .section-left {
+    width: 100%;
+  }
+
+  .section-right {
+    width: 100%;
+    flex-direction: row;
+    gap: 20px;
+  }
+}
